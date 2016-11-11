@@ -1,0 +1,251 @@
+/***
+The Hannah Fund website CSS
+Author: Haley Young
+Created: October 21st 2016
+Last edited: October 24st 2016
+***/
+
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font: .9em 'Open Sans', Helvetica, sans-serif;
+    line-height: 1.7;
+    color: #333;
+}
+
+body {
+    margin: 0;
+}
+
+.no-mobile {
+    display: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+a, a:visited {
+    text-decoration: none;
+    color: #333;
+    border-bottom: 3px solid #ffe34d;
+    transition: all .3s ease;
+}
+
+a:hover {
+    color: #222;
+    border-bottom: 3px solid #e6c200;
+}
+
+header {
+    text-align: center;
+}
+
+h1 {
+    font: 2.5em 'Pacifico', Georgia, serif;
+    text-align: center;
+    margin: .2em 0;
+    color: #612f7d;
+}
+
+h2 {
+    color: #cdac00;
+    text-align: center;
+}
+
+.story-name {
+    font: 2.3em 'Pacifico', Georgia, serif;
+    text-align: center;
+    margin: .2em 0;
+    color: #612f7d;
+}
+
+.story-subtitle {
+    font-size: 1.2em;
+    margin-top: -.3em;
+}
+
+.site-subtitle {
+    margin: 0 auto;
+    padding: 2em .5em;
+    max-width: 900px;
+    color: #ffd700;
+}
+
+.subtitle-background-header {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+                url(http://www.teletextholidays.co.uk/blog/wp-content/uploads/Header-Generic-Group-of-People-Jumping-on-Beach.jpg) no-repeat center/cover;
+    min-height: 30vh;
+    box-shadow: 0 0 1em #361a45;
+}
+
+nav {
+    background: #53286a;
+}
+
+nav ul {
+    position: fixed;
+    bottom: 0;
+    padding: .3em 0;
+    text-align: center;
+    background: #53286a;
+    width: 100%;
+    margin-bottom: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: .2em;
+    padding: .7em 0;
+}
+
+nav ul li:first-child {
+    font-family: 'Pacifico', serif;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a, nav ul li a:visited {
+    border: none;
+    color: #f2ebf5;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: .5em;
+}
+
+nav ul li a:hover {
+    border-bottom: 5px solid #ffd700;
+    color: #fff;
+}
+
+section {
+    padding: .5em;
+    max-width: 900px;
+    margin: auto;
+}
+
+a.featured-link-box, a.featured-link-box:visited {
+    display: block;
+    margin: 1em auto;
+    text-align: center;
+    border: none;
+    padding: 2em .5em;
+    font: 1.5em 'Pacifico', serif;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+                url(http://www.teletextholidays.co.uk/blog/wp-content/uploads/Header-Generic-Group-of-People-Jumping-on-Beach.jpg) no-repeat center/cover;
+    color: #fff;
+    width: 85%;
+}
+
+.featured-link-box:hover {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                url(http://www.teletextholidays.co.uk/blog/wp-content/uploads/Header-Generic-Group-of-People-Jumping-on-Beach.jpg) no-repeat center/cover;
+}
+    
+footer {
+    text-align: center;
+    font-size: .9em;
+    margin-top: 4em;
+    background: #53286a;
+    padding: .5em 0 6em;
+    color: #f2ebf5;
+    box-shadow: inset 0 0 1.5em #361a45;
+}
+
+footer ul {
+    padding-left: 0;
+}
+
+footer a, footer a:visited {
+    color: #f2ebf5;
+    border-color: #8d44b4;
+}
+
+footer a:hover {
+    color: #fff;
+    border-color: #a466c5;
+}
+
+@media screen and (min-width: 425px) {
+
+    nav ul li {
+        margin-right: 1em;
+    }
+
+    a.featured-link-box, a.featured-link-box:visited {
+        width: calc(33% - .6em);
+        display: inline-block;
+        margin: .2em;
+    }
+
+}
+
+
+@media screen and (min-width: 768px) {
+    
+    html {
+        font-size: 1.1em;
+    }
+
+    body {
+        margin: 0;
+    }
+
+    .no-mobile {
+        display: inline;
+    }
+
+    .mobile-only {
+        display: none;
+    }
+
+    nav ul {
+        position: relative;
+        display: inline-block;
+        width: auto;
+        margin: .3em 0;
+        border: none;
+        background: none;
+    }
+
+    nav ul li:first-child {
+        margin-right: 14em;
+    }
+
+    .subtitle-background-header {
+        margin-top: 0;
+        min-height: 40vh;
+    }
+
+    h1 {
+        font-size: 3em;
+    }
+
+    .site-subtitle {
+        font-size: 2em;
+    }
+
+    footer {
+        padding-bottom: .5em;
+    }
+
+    footer ul li {
+        display: inline-block;
+        max-width: 40%;
+        padding: 0 2em;
+    }
+}
+
+
+@media screen and (min-width: 1024px) {
+    
+    nav ul li:first-child {
+        margin-right: 24em;
+    }
+
+}
